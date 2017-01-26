@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//Kesken
+
 namespace Teht12
 {
     class Program
@@ -26,18 +26,13 @@ namespace Teht12
             string line5 = Console.ReadLine();
             num5 = int.Parse(line5);
 
-            int[] array = new int[5] { num1, num2, num3, num4, num5 };
-            //Array.Reverse(array);
-            Console.WriteLine("-----------------");
+            int[] array = { num1, num2, num3, num4, num5 };
+            // Array.Reverse(array);
 
-            for (int i = 0; i > array[5]; i++)
+            Console.WriteLine("------------");
+           for(int i = array.Length - 1; i >=0;i--)
             {
-                for (int j = 0; j = array[5]; j--)
-
-                    foreach (int item in array)
-                    {
-                        Console.WriteLine(item.ToString());
-                    }
+                Console.WriteLine(array[i]);
             }
         }
     }
